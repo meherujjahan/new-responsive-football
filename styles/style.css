@@ -1,0 +1,140 @@
+/*------------
+ font family 
+ -------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/*------------
+ banner style
+ ------------*/
+.football{
+        width: 1400px;
+}
+
+.continer{padding-left: 100px;padding-right: 150px;
+        background-color: rgb(15, 15, 184);
+}
+.banner{align-items: center;
+        margin-top:5px ;
+        display: flex;
+        justify-content: space-between;
+}
+.title{
+        color: white;
+        text-decoration: none;
+}
+
+.link-title{border: 2px solid tomato;
+        background-color: tomato;
+        border-radius: 10px;
+        padding-top: 20px;
+        width: 250px;height: 60px;text-align: center;
+     
+}
+.banner-detail{font-size: xx-large;
+        color: seashell;
+        font-family: 'Poppins', sans-serif;
+}
+.banner-img{  
+padding-top: 20px;
+padding-bottom: 20px;
+        width: 550px;
+        height: 450px;
+}
+       .continer:hover .banner-img{
+        transform: scale(0.5);
+        transition: transform 5s ease-in-out;
+}
+/*-------------- 
+  player style
+-------------- */
+
+.continer-2{ padding-left: 75px;
+        background-color: rgb(236, 236, 120);
+}
+
+.all-player{
+display: grid; 
+align-items: center;
+grid-template-columns: repeat(3, 1fr);
+}
+
+
+.players{width: 300px;
+        height: 410px;
+background-color: rgb(245, 188, 83);
+        border: 2px solid hsl(60, 93%, 57%);
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px 5px rgb(241, 241, 67);
+margin-bottom: 25px;margin-top: 45px;
+        }
+.player-detail{
+        padding-left: 10px;
+}
+
+.player-img{padding-left: 25px;
+        padding-top: 15px;
+        width: 250px;
+        height: 220px;
+}
+
+/*----------- 
+match style 
+-------------*/
+.match{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 100px;
+}   
+.match-detail{
+        font-size: xx-large;
+        color: black;
+        font-family: 'Poppins', sans-serif;
+}
+.paragraph{
+        font-size: small;
+}
+.title-2{text-decoration: none;
+        color: black;
+}
+.info{
+        color: rgb(187, 56, 9);
+}
+.match-img{
+width: 550px;
+height: 450px;
+}
+/* --------------- 
+    logo style
+--------------- */
+.logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+}
+/*-----------------
+    media queriaes
+ ---------------- */
+/*---------------- 
+   mobile devices 
+----------------- */
+@media only screen and(max-width: 688px) {     
+.football{
+        width: 100%;
+}
+        .banner{display: flex;
+              flex-direction: column;
+        }
+        
+        
+        .all-player{ display: grid;
+     grid-template-columns: repeat(1, 1fr);
+   }
+   
+   
+    .match{display: flex;
+flex-direction: column;
+}
+}
